@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: WhatToWatchNext
+  datasource:
+    url: jdbc:postgresql://192.168.2.181:5433/postgres
+    username: postgres
+    password: mysecretpassword
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update # Automatically update schema; adjust as needed
+    show-sql: true # Log SQL queries for debugging
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 50MB
+      max-request-size: 50MB
+  mvc:
+    async:
+      request-timeout: 3600000
+  server:
+    port: 8080 
