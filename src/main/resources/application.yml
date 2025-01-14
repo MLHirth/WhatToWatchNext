@@ -2,9 +2,9 @@ spring:
   application:
     name: WhatToWatchNext
   datasource:
-    url: jdbc:postgresql://192.168.2.181:5433/postgres
-    username: postgres
-    password: mysecretpassword
+    url: jdbc:postgresql://.../postgres
+    username: ...
+    password: ...
   jpa:
     properties:
       hibernate:
